@@ -1,0 +1,32 @@
+{
+    "name": "lava-code",
+    "version": "1.0.0",
+    "description": "Aplicação web desenvolvida para administrar as operações de um lava-jato, permitindo o controle de clientes, veículos e marcação de serviços. O sistema possui acesso restrito por autenticação, sessões com tempo de validade e proteção dos CPFs cadastrados por meio de criptografia.",
+    "private": true,
+    "type": "module",
+    "author": {
+        "name": "Lívia Oliveira"
+    },
+    "license": "MIT",
+    "prisma": {
+    "seed": "node prisma/seed.js"
+},
+    "scripts": {
+        "bd": "cls && node anexos/bd.js",
+        "dev": "cls && next dev",
+        "entrega": "cls && node anexos/entrega.js"
+    },
+    "dependencies": {
+        "@prisma/client": "6.19.3",
+        "antd": "6.6.8",
+        "bcryptjs": "3.0.3",
+        "jsonwebtoken": "9.0.3",
+        "next": "16.4.3",
+        "react": "19.3.1",
+        "react-dom": "19.3.1"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "2.6.3",
+        "prisma": "6.19.3"
+    }
+}
